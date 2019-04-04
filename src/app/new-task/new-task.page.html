@@ -3,32 +3,31 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>New Task</ion-title>
+    <ion-title>Farmer Detail Form</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
-  <div>
-    <ion-row no-padding>
-      <ion-col size="6" offset="3">
-        <img [src]="image" alt="this is the image"/>
-      </ion-col>
-    </ion-row>
-    <ion-row no-padding>
-      <ion-col size="6" offset="3">
-        <ion-button fill="outline" expand="block" size="small" (click)="openImagePicker()">Change Picture</ion-button>
-      </ion-col>
-    </ion-row>
-  </div>
   <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
     <ion-item>
-      <ion-label position="floating" color="primary">Title</ion-label>
-      <ion-input type="text" formControlName="title"></ion-input>
+      <ion-label position="floating" color="primary">Seed Cost</ion-label>
+      <ion-input type="text" formControlName="phone"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating" color="primary">Description</ion-label>
-      <ion-input type="text" formControlName="description"></ion-input>
+      <ion-label position="floating" color="primary">Manure & Fertilizer Cost</ion-label>
+      <ion-input type="text" formControlName="grain"></ion-input>
     </ion-item>
-    <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">Create</ion-button>
+    <ion-item>
+      <ion-label position="floating" color="primary">Irrigation Cost</ion-label>
+      <ion-input type="text" formControlName="irrigationCost"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Animal labour</ion-label>
+      <ion-input type="text" formControlName="animalCost"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">Machine Labour</ion-label>
+      <ion-input type="text" formControlName="machineCost"></ion-input>
+    </ion-item>
+    <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">ENTER TO DATABASE</ion-button>
   </form>
 </ion-content>

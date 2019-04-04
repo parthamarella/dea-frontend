@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "YOUR_CREDENTIALS_HERE",
-    authDomain: "YOUR_CREDENTIALS_HERE",
-    databaseURL: "YOUR_CREDENTIALS_HERE",
-    projectId: "YOUR_CREDENTIALS_HERE",
-    storageBucket: "YOUR_CREDENTIALS_HERE",
-    messagingSenderId: "YOUR_CREDENTIALS_HERE"
+    apiKey: "AIzaSyB2Cz1EPocfjX7ODxZegcrpJOMqA38TbEw",
+    authDomain: "gitscam-ba0d3.firebaseapp.com",
+    databaseURL: "https://gitscam-ba0d3.firebaseio.com",
+    projectId: "gitscam-ba0d3",
+    storageBucket: "gitscam-ba0d3.appspot.com",
+    messagingSenderId: "768482236482"
   }
 };
 

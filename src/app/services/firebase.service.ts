@@ -73,9 +73,11 @@ export class FirebaseService {
     return new Promise<any>((resolve, reject) => {
       let currentUser = firebase.auth().currentUser;
       this.afs.collection('people').doc(currentUser.uid).collection('tasks').add({
-        title: value.title,
-        description: value.description,
-        image: value.image
+        phone: value.phone,
+        grain: value.grain,
+        irrigationCost: value.irrigationCost,
+        animalCost: value.animalCost,
+        machineCost: value.machineCost
       })
       .then(
         res => resolve(res),
