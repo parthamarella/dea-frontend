@@ -72,12 +72,13 @@ export class FirebaseService {
   createTask(value){
     return new Promise<any>((resolve, reject) => {
       let currentUser = firebase.auth().currentUser;
-      this.afs.collection('people').doc(currentUser.uid).collection('tasks').add({
-        phone: value.phone,
-        grain: value.grain,
-        irrigationCost: value.irrigationCost,
-        animalCost: value.animalCost,
-        machineCost: value.machineCost
+      this.afs.collection('people').doc(value.phone).set({
+      phone: value.phone,
+      seedCost: value.seedCost,
+      manureCost: value.manureCost,
+      irrigationCost: value.irrigationCost,
+      animalCost: value.animalCost,
+      machineCost:value.machineCost
       })
       .then(
         res => resolve(res),

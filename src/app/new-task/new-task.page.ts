@@ -35,7 +35,8 @@ export class NewTaskPage implements OnInit {
     this.image = "./assets/imgs/default_image.jpg";
     this.validations_form = this.formBuilder.group({
       phone: new FormControl('', Validators.required),
-      grain: new FormControl('', Validators.required), 
+      seedCost: new FormControl('', Validators.required), 
+      manureCost: new FormControl('', Validators.required), 
       irrigationCost:  new FormControl('', Validators.required),
       animalCost: new FormControl('', Validators.required),
       machineCost: new FormControl('', Validators.required)
@@ -45,10 +46,11 @@ export class NewTaskPage implements OnInit {
   onSubmit(value){
     let data = {
       phone: value.phone,
-      grain: value.grain,
+      seedCost: value.seedCost,
+      manureCost: value.manureCost,
       irrigationCost: value.irrigationCost,
       animalCost: value.animalCost,
-      machineCost:value.machineCost,
+      machineCost:value.machineCost
     } 
     this.firebaseService.createTask(data)
     .then(

@@ -9,13 +9,17 @@
 
 <ion-content padding>
   <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+      <ion-item>
+          <ion-label position="floating" color="primary">Phone Number</ion-label>
+          <ion-input type="text" formControlName="Phone"></ion-input>
+        </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Seed Cost</ion-label>
-      <ion-input type="text" formControlName="phone"></ion-input>
+      <ion-input type="text" formControlName="seedCost"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Manure & Fertilizer Cost</ion-label>
-      <ion-input type="text" formControlName="grain"></ion-input>
+      <ion-input type="text" formControlName="manureCost"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Irrigation Cost</ion-label>
@@ -29,7 +33,6 @@
       <ion-label position="floating" color="primary">Machine Labour</ion-label>
       <ion-input type="text" formControlName="machineCost"></ion-input>
     </ion-item>
-    <ion-button class="submit-button" expand="block" type="submit" [disabled]="!validations_form.valid">Save</ion-button>
   </form>
   <ion-button class="delete-button" expand="block" color="danger" (click)="delete()">Delete</ion-button>
 
