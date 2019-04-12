@@ -73,6 +73,7 @@ export class FirebaseService {
     return new Promise<any>((resolve, reject) => {
       let currentUser = firebase.auth().currentUser;
       this.afs.collection('people').doc(value.phone).set({
+      state: "andhra",
       phone: value.phone,
       seedCost1: value.seedCost1,
       manureCost1: value.manureCost1,
