@@ -20,8 +20,11 @@ export class StateChooserPage implements OnInit {
 
   openState2() {
     alert("opening state")
-    this.router.navigate(["/new-task-a"]);
+    this.router.navigate(["/new-task"]);
   }
-
+  openState3() {
+    alert("opening state")
+    this.router.navigate(["/new-task"]);
+  }
 
 }

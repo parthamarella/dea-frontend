@@ -35,22 +35,42 @@ export class NewTaskPage implements OnInit {
     this.image = "./assets/imgs/default_image.jpg";
     this.validations_form = this.formBuilder.group({
       phone: new FormControl('', Validators.required),
-      seedCost: new FormControl('', Validators.required), 
-      manureCost: new FormControl('', Validators.required), 
-      irrigationCost:  new FormControl('', Validators.required),
-      animalCost: new FormControl('', Validators.required),
-      machineCost: new FormControl('', Validators.required)
+      seedCost1: new FormControl('', Validators.required), 
+      manureCost1: new FormControl('', Validators.required), 
+      irrigationCost1:  new FormControl('', Validators.required),
+      familyCost1: new FormControl('', Validators.required),
+      machineCost1: new FormControl('', Validators.required),
+      seedCost2: new FormControl('', Validators.required), 
+      manureCost2: new FormControl('', Validators.required), 
+      irrigationCost2:  new FormControl('', Validators.required),
+      familyCost2: new FormControl('', Validators.required),
+      machineCost2: new FormControl('', Validators.required),
+      seedCost3: new FormControl('', Validators.required), 
+      manureCost3: new FormControl('', Validators.required), 
+      irrigationCost3:  new FormControl('', Validators.required),
+      familyCost3: new FormControl('', Validators.required),
+      machineCost3: new FormControl('', Validators.required),
     });
   }
 
   onSubmit(value){
     let data = {
       phone: value.phone,
-      seedCost: value.seedCost,
-      manureCost: value.manureCost,
-      irrigationCost: value.irrigationCost,
-      animalCost: value.animalCost,
-      machineCost:value.machineCost
+      seedCost1: value.seedCost1,
+      manureCost1: value.manureCost1,
+      irrigationCost1: value.irrigationCost1,
+      familyCost1: value.familyCost1,
+      machineCost1: value.machineCost1,
+      seedCost2: value.seedCost2,
+      manureCost2: value.manureCost2,
+      irrigationCost2: value.irrigationCost2,
+      familyCost2: value.familyCost2,
+      machineCost2: value.machineCost2,
+      seedCost3: value.seedCost3,
+      manureCost3: value.manureCost3,
+      irrigationCost3: value.irrigationCost3,
+      familyCost3: value.familyCost3,
+      machineCost3: value.machineCost3,
     } 
     this.firebaseService.createTask(data)
     .then(

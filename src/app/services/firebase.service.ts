@@ -74,11 +74,21 @@ export class FirebaseService {
       let currentUser = firebase.auth().currentUser;
       this.afs.collection('people').doc(value.phone).set({
       phone: value.phone,
-      seedCost: value.seedCost,
-      manureCost: value.manureCost,
-      irrigationCost: value.irrigationCost,
-      animalCost: value.animalCost,
-      machineCost:value.machineCost
+      seedCost1: value.seedCost1,
+      manureCost1: value.manureCost1,
+      irrigationCost1: value.irrigationCost1,
+      familyCost1: value.familyCost1,
+      machineCost1: value.machineCost1,
+      seedCost2: value.seedCost2,
+      manureCost2: value.manureCost2,
+      irrigationCost2: value.irrigationCost2,
+      familyCost2: value.familyCost2,
+      machineCost2: value.machineCost2,
+      seedCost3: value.seedCost3,
+      manureCost3: value.manureCost3,
+      irrigationCost3: value.irrigationCost3,
+      familyCost3: value.familyCost3,
+      machineCost3: value.machineCost3,
       })
       .then(
         res => resolve(res),

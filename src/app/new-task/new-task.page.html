@@ -8,30 +8,75 @@
 </ion-header>
 <ion-content padding>
   <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+    <h2>Arhar</h2>
       <ion-item>
           <ion-label position="floating" color="primary">Phone Number</ion-label>
           <ion-input type="text" formControlName="phone"></ion-input>
       </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Seed Cost</ion-label>
-      <ion-input type="text" formControlName="seedCost"></ion-input>
+      <ion-input type="text" formControlName="seedCost1"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Manure & Fertilizer Cost</ion-label>
-      <ion-input type="text" formControlName="manureCost"></ion-input>
+      <ion-input type="text" formControlName="manureCost1"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Irrigation Cost</ion-label>
-      <ion-input type="text" formControlName="irrigationCost"></ion-input>
+      <ion-input type="text" formControlName="irrigationCost1"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating" color="primary">Animal labour</ion-label>
-      <ion-input type="text" formControlName="animalCost"></ion-input>
+      <ion-label position="floating" color="primary">Family labour</ion-label>
+      <ion-input type="text" formControlName="familyCost1"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">Machine Labour</ion-label>
-      <ion-input type="text" formControlName="machineCost"></ion-input>
+      <ion-input type="text" formControlName="machineCost1"></ion-input>
     </ion-item>
+    <h2>Paddy</h2>
+  <ion-item>
+    <ion-label position="floating" color="primary">Seed Cost</ion-label>
+    <ion-input type="text" formControlName="seedCost2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Manure & Fertilizer Cost</ion-label>
+    <ion-input type="text" formControlName="manureCost2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Irrigation Cost</ion-label>
+    <ion-input type="text" formControlName="irrigationCost2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Family labour</ion-label>
+    <ion-input type="text" formControlName="familyCost2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Machine Labour</ion-label>
+    <ion-input type="text" formControlName="machineCost2"></ion-input>
+  </ion-item>
+    <!--add the above fields and change form control name to their numberic values-->
+    <h2>Urad</h2>
+  <ion-item>
+    <ion-label position="floating" color="primary">Seed Cost</ion-label>
+    <ion-input type="text" formControlName="seedCost3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Manure & Fertilizer Cost</ion-label>
+    <ion-input type="text" formControlName="manureCost3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Irrigation Cost</ion-label>
+    <ion-input type="text" formControlName="irrigationCost3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Family labour</ion-label>
+    <ion-input type="text" formControlName="familyCost3"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="primary">Machine Labour</ion-label>
+    <ion-input type="text" formControlName="machineCost3"></ion-input>
+  </ion-item>
+    <!--add the above fields and change form control name to their numberic values-->
     <ion-button class="submit-btn" expand="block" type="submit" [disabled]="!validations_form.valid">ENTER TO DATABASE</ion-button>
   </form>
 </ion-content>
