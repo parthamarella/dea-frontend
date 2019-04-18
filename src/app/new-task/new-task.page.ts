@@ -34,7 +34,7 @@ export class NewTaskPage implements OnInit {
   resetFields(){
     this.image = "./assets/imgs/default_image.jpg";
     this.validations_form = this.formBuilder.group({
-      state: "andhra",
+      state: "ap",
       phone: new FormControl('', Validators.required),
       seedCost1: new FormControl('', Validators.required), 
       manureCost1: new FormControl('', Validators.required), 
@@ -56,7 +56,7 @@ export class NewTaskPage implements OnInit {
 
   onSubmit(value){
     let data = {
-      state: 'andhra',
+      state: 'ap',
       phone: value.phone,
       seedCost1: value.seedCost1,
       manureCost1: value.manureCost1,

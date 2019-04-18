@@ -19,11 +19,12 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { environment } from '../environments/environment';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewTaskBComponent } from './new-task-b/new-task-b.component';
 // import { NewTaskModalPage } from './new-task-modal/new-task-modal.page';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NewTaskBComponent],
   // declarations: [AppComponent, NewTaskModalPage],
   // entryComponents: [NewTaskModalPage],
   imports: [
