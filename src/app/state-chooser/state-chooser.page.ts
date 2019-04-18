@@ -24,7 +24,7 @@ export class StateChooserPage implements OnInit {
   }
   openState3() {
     alert("You have selected Uttar Pradesh ")
-    this.router.navigate(["/new-task"]);
+    this.router.navigate(["/new-task-b"]);
   }
 
 }
