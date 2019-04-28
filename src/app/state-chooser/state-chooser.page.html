@@ -8,9 +8,38 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-buttons end>
-  <ion-button  color="primary" expand="block" (click) ="openState1()" >ANDHRA PRADESH</ion-button>
-   <ion-button  color="primary" expand="block" (click) ="openState2()" >MADHYA PRADESH </ion-button>
-   <ion-button  color="primary" expand="block" (click) ="openState3()" >UTTAR PRADESH</ion-button>
-  </ion-buttons>
+ 
+<ion-card>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>ANDHRA PRADESH</ion-label>
+    <ion-button fill="outline" slot="end" (click)="openState1()">Enter details</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+   Farmers from Andhra are to be registered here
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>MADHYA PRADESH</ion-label>
+    <ion-button fill="outline" slot="end" (click)="openState2()">Enter details</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+   Farmers from Madhya Pradesh are to be registered here
+  </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>UTTAR PRADESH</ion-label>
+    <ion-button fill="outline" slot="end" (click)="openState3()">Enter details</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+   Farmers from Uttar Pradesh are to be registered here
+  </ion-card-content>
+</ion-card>
 </ion-content>
