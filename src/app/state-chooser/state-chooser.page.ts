@@ -14,16 +14,16 @@ export class StateChooserPage implements OnInit {
   }
 
   openState1() {
-    alert("You have selected Andhra Pradesb")
+   
     this.router.navigate(["/new-task"]);
   }
 
   openState2() {
-    alert("You have selected Madhya Pradesh ")
+
     this.router.navigate(["/new-task-a"]);
   }
   openState3() {
-    alert("You have selected Uttar Pradesh ")
+  
     this.router.navigate(["/new-task-b"]);
   }
 
